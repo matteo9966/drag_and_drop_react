@@ -72,6 +72,7 @@ class Board extends Component {
     }
 
     // reordering column
+    // this if is used only to reorder the columns. this.state.ordered is an array of the names of the columns that is mapped when rendered
     if (result.type === "COLUMN") {
       const ordered = reorder(
         this.state.ordered,
